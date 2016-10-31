@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places you've been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places you've been</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a place that you've been:</h2>
+          <form id="new-place">
+            <div class="form-group">
+              <label for="location">Location name:</label>
+              <input type="text" class="form-control" id="location">
+            </div>
+            <div class="form-group">
+              <label for="landmarks">Landmarks:</label>
+              <input type="text" class="form-control" id="landmarks">
+            </div>
+
+            <div class="form-group">
+              <label for="time">Time of year:</label>
+              <input type="text" class="form-control" id="time">
+            </div>
+
+            <div class="form-group">
+              <label for="weather">Weather:</label>
+              <input type="text" class="form-control" id="weather">
+            </div>
+
+            <div class="form-group">
+              <label for="occasion">Occasion:</label>
+              <input type="text" class="form-control" id="occasion">
+            </div>
+
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <div id = "place-title">
+            <h2>Places you've been:</h2>
+
+          </div>
+          <ul id="places">
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <div id="show-places">
+            <h2></h2>
+
+            <p>Location: <span class="location"></span></p>
+            <p>Landmarks: <span class="landmarks"></span></p>
+            <p>Time of year: <span class="time"></span></p>
+            <p>Weather: <span class="weather"></span></p>
+            <p>Occasion: <span class="occasion"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
